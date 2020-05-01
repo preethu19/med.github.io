@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Patient Report</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+	</head>
+	<body>
+		<div class="ui fixed inverted menu">
+			<div class="ui container collapse navbar-collapse">
+				<div class="header item"><i class="code icon" id="icon"></i>Report</div>
+				<a href="/" class="item">Home</a>
+				<a href="/visits" class="item">Report</a>
+				<div class="item right">
+					
+                    <% if(!currentuser){ %>
+                        <a class="item" href="/login">Login</a>
+                        <a class="item" href="/register">Sign Up</a>
+                    <% } else { %>
+                        <a class="item" href="#">Signed In As <%= currentuser.username %></a>
+                        <a class="item" href="/logout">Logout</a>
+                    <% } %>
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 11518098;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/11518098/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->

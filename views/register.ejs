@@ -1,0 +1,23 @@
+<% include partials/header %>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/user.css">
+
+	<div class="container">
+		<form action="/register" method="POST">
+			<div>
+				<h2 id="h2">Sign Up</h2>
+				<div class="form-group">
+				<label>Username</label>
+				<input type="username" class="form-control" name="username" placeholder="Username" required="text">
+				</div>
+				<div class="form-group">
+				<label>Password</label>
+				<input type="password" class="form-control" name="password" placeholder="Password" required="password">
+				</div>
+				<p>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</p>
+			</div>
+		</form>
+	</div>
+
+	<% include partials/footer %>

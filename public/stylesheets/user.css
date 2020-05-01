@@ -1,0 +1,32 @@
+
+form{
+	padding: 100px 100px;
+	align-content: center;
+	margin: 50px;
+	width: 500px;
+	padding-left: auto;
+
+}
+#h2{
+	color: white;
+	text-transform: bold;
+}
+input{
+	margin: 10px;
+}
+
+body{
+	background: url(https://cdn.pixabay.com/photo/2017/05/09/03/47/beautiful-2297208__340.jpg) no-repeat;
+	background-size: cover;
+
+}
+.form-group{
+	color: white;
+}
+
+
+button{
+	padding-top: 10px;
+	margin: 25px;
+}
+
